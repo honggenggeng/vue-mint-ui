@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import one from '@/components/one'
 import loadmore from '@/components/loadmore'
 import InfiniteScroll from '@/components/InfiniteScroll'
+import Messagebox from '@/components/Messagebox'
 Vue.use(Router)
 
 export default new Router({
@@ -33,6 +34,14 @@ export default new Router({
       meta:{
         title:'InfiniteScroll'
       }
-    }
+    },
+    {
+      path: '/Messagebox',
+      name: 'Messagebox',
+      component: Messagebox,
+      meta:{
+        title:'消息框'
+      }
+    },
   ]
 })

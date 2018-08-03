@@ -6,13 +6,14 @@ import One from './components/one'
 import router from './router'
 import 'mint-ui/lib/style.css'
 import ZyHeader from './module/ZyHead'
-
+import PopUp from './module/PopUp'
 
 
 
 Vue.config.productionTip = false
 Vue.component('App',App)
 Vue.component('zyHeader',ZyHeader)
+Vue.component("popUp",PopUp)
 import { InfiniteScroll } from 'mint-ui';
 Vue.use(InfiniteScroll);
 import { Loadmore } from 'mint-ui'
