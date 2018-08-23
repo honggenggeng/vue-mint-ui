@@ -1,6 +1,6 @@
 <template>
     <div>
-     <zy-header :headtitle='$route.meta.title' ></zy-header>
+     <zy-header :headtitle='$route.meta.title' back="上一页" ></zy-header>
         <mt-loadmore :top-method="loadTop" :bottom-method="loadBottom" :bottom-all-loaded="allLoaded" topPullText='继续' topDropText='撒手' topLoadingText='读取' ref="loadmore" @top-status-change="handleTopChange" @bottom-status-change="handleBottomChange">
             <ul>
                 <li v-for="item in list">{{ item }}</li>

@@ -1,8 +1,13 @@
 <template>
   <div class="head">
     <mt-header :fixed="fixed" :title="headtitle" class="zy">
-        <span slot="left" icon="back" v-show="lefrbtn" @click="goback">{{back}}</span>
-        <span icon="more" slot="right" v-show="rightbtn" @click="rightxx">{{three}}</span>
+        <span slot="left" icon="back" v-show="lefrbtn" @click="goback">
+            {{back}}
+            <slot name="fanhui"></slot>
+        </span>
+        <span slot="right" icon="more" v-show="rightbtn" @click="rightxx">
+            <slot name="fenxiang">默认</slot>
+        </span><!---->
     </mt-header>
   </div>
 </template>
@@ -22,7 +27,7 @@ export default {
       lefrbtn:{type:Boolean,default:true},
       rightbtn:{type:Boolean,default:true},
       headtitle:{default:'嘀嘀嘀'},
-      back:{default:"返回"},
+      back:{default:"《"},
       three:{default:'...'},
       fixed:{type:Boolean, default:true}
   },

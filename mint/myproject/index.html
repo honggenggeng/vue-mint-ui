@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0,width=device-width, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
     <title>myproject</title>
+    <script type="text/javascript" src="./static/js/jquery.min.js"></script>
   </head>
       
   <body>
@@ -24,7 +25,8 @@
                 if(!doc.addEventListener) { return false }//去除浏览器不兼容实时监听的方法
                 win.addEventListener(resizeEvt, recalc, false);
                 doc.addEventListener("DOMContentLoaded", recalc, false);
-            })(window, document)
+            })(window, document)  
+            // console.log($('#app'))
         </script>
   <style>
     html,body{

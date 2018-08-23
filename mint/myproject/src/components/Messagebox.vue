@@ -92,7 +92,8 @@ export default {
     },
     btn4(){//单按钮弹出框
       this.isshow=true
-      // this.jud=true
+      // this.jud=true 
+      //也可以改变子组件挂载的数据（也可以更改弹出框按钮的个数只是在父组件中更改，但是不如让子组件更改子组件的数据安全）
     },
     btn5(){//双按钮弹出框
       this.isshow=true
