@@ -9,8 +9,15 @@ import ZyHeader from './module/ZyHead'
 import PopUp from './module/PopUp'
 import ZyOpinion from './module/Opinion' //体检类型选项
 import Son from './components/son'
+import AjaxRequest from './module/AjaxRequest'
+import Ajax from './module/Ajax'
+import ajaxtwo from './module/ajaxtwo'
+
 
 Vue.config.productionTip = false
+Vue.use(AjaxRequest)
+Vue.use(ajaxtwo)
+Vue.use(Ajax)
 Vue.component('App',App)
 Vue.component('Son',Son)
 Vue.component('zyHeader',ZyHeader)
